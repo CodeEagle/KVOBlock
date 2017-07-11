@@ -31,7 +31,6 @@
 }
 
 - (void)dealloc {
-    NSLog(@"dealloc, %@", self.keyPath);
     if (self.beObserver) {
         [self.beObserver removeObserver:self forKeyPath:self.keyPath];
     }
